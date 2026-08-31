@@ -1,0 +1,26 @@
+Meridian Financial Services Ltd
+THIRD-PARTY VENDOR RISK MANAGEMENT POLICY
+Document Owner: Operational Risk | Version 2.3 | Last Reviewed: August 2025
+
+1. Purpose
+This policy sets out how the firm assesses and manages risk arising from outsourcing and third-party vendor relationships.
+
+2. Vendor Categorisation
+2.1 Critical vendors: those supporting a critical business function, e.g. core banking platform, payment processors.
+2.2 Important vendors: significant but not critical to continued operations.
+2.3 Standard vendors: limited business impact if disrupted.
+
+3. Due Diligence Before Onboarding a Vendor
+3.1 Financial stability assessment.
+3.2 Information security review, including a completed security questionnaire.
+3.3 Data protection assessment where the vendor will process personal data, including a Data Processing Agreement.
+3.4 For critical vendors, an on-site or virtual audit is required before contract signature.
+
+4. Ongoing Monitoring
+Critical vendors are reviewed annually; important vendors every two years. Reviews assess performance against SLAs, incident history, and continued financial stability.
+
+5. Exit Planning
+For all critical vendors, an exit plan must be documented and tested, describing how the firm would transition away from the vendor with minimal disruption.
+
+6. Incident Management
+Vendor-related incidents affecting customers or data must be reported to Operational Risk within 24 hours and follow the same escalation path as internal incidents.

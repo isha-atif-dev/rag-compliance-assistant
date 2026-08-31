@@ -1,0 +1,24 @@
+Meridian Financial Services Ltd
+DATA BREACH RESPONSE PROCEDURE
+Document Owner: Data Protection Officer (DPO) | Version 2.1 | Last Reviewed: April 2026
+
+1. Purpose
+This procedure describes the steps taken when a personal data breach is suspected or confirmed, supporting the Data Protection and GDPR Compliance Policy.
+
+2. Step 1: Identification and Containment
+Upon discovering a suspected breach, the discovering employee must notify the DPO and Security Operations immediately. Immediate steps are taken to contain the breach, e.g. revoking access, isolating affected systems.
+
+3. Step 2: Assessment
+Within 24 hours, the DPO leads an assessment of: what data was involved, how many individuals are affected, and the likely risk of harm to those individuals.
+
+4. Step 3: Regulatory Notification
+Where the breach is likely to result in a risk to individuals' rights and freedoms, the ICO must be notified within 72 hours of the firm becoming aware of the breach, using the standard ICO breach notification form.
+
+5. Step 4: Individual Notification
+Where the breach is likely to result in high risk to individuals, affected individuals must be notified directly and without undue delay, explaining the nature of the breach and recommended protective steps.
+
+6. Step 5: Remediation
+Root cause is identified and remediated. A post-incident review is documented, including lessons learned and any control improvements required.
+
+7. Step 6: Record Keeping
+All personal data breaches, including those not requiring notification, are logged in the Data Breach Register, retained per the Records Retention Policy.

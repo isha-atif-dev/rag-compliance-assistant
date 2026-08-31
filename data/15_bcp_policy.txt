@@ -1,0 +1,22 @@
+Meridian Financial Services Ltd
+BUSINESS CONTINUITY AND DISASTER RECOVERY POLICY
+Document Owner: Operational Resilience | Version 2.0 | Last Reviewed: April 2025
+
+1. Purpose
+This policy ensures the firm can continue critical operations, or recover quickly, in the event of a significant disruption.
+
+2. Business Impact Analysis
+Critical business services are identified and assigned a maximum tolerable outage (MTO), reviewed annually.
+
+3. Recovery Objectives
+3.1 Recovery Time Objective (RTO) for core payment processing: 4 hours.
+3.2 Recovery Point Objective (RPO) for customer data: 15 minutes, achieved through continuous database replication.
+
+4. Testing
+Business continuity plans are tested at least annually through simulated exercises, including a full failover test of core systems.
+
+5. Communication Plan
+In the event of a major incident, a designated Incident Communications Lead is responsible for updating customers, staff, and regulators as required.
+
+6. Regulatory Notification
+Where an incident materially disrupts customer-facing services, the FCA must be notified as soon as possible and in any case within the timelines set out in the firm's Operational Resilience framework.

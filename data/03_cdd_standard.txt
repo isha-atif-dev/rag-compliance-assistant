@@ -1,0 +1,23 @@
+Meridian Financial Services Ltd
+CUSTOMER DUE DILIGENCE (CDD) STANDARD
+Document Owner: Compliance | Version 1.9 | Last Reviewed: February 2026
+
+1. Purpose
+This standard defines the three tiers of due diligence applied to customers and when each applies.
+
+2. Simplified Due Diligence (SDD)
+Applied where the customer presents a genuinely low risk, e.g. certain regulated public bodies. Requires basic identity confirmation only.
+
+3. Standard Due Diligence (CDD)
+The default level applied to all retail and business customers. Includes identity verification, address verification, and sanctions/PEP screening as described in the KYC Procedures.
+
+4. Enhanced Due Diligence (EDD)
+Applied to high-risk customers, including PEPs, customers connected to high-risk third countries, and customers where the initial risk assessment flags concerns.
+4.1 EDD requires: source of funds verification, source of wealth verification, senior management sign-off before onboarding, and more frequent ongoing monitoring.
+4.2 Source of funds documentation may include payslips, bank statements, or business accounts, depending on the customer's declared income source.
+
+5. Escalation
+Any Onboarding Analyst uncertain which tier applies must escalate to a Compliance Officer before proceeding. Under no circumstances should an account be activated while due diligence is incomplete.
+
+6. Review Triggers
+A customer's due diligence tier may be upgraded at any time following a change in circumstances, a negative media hit, or unusual transaction activity identified by monitoring.

@@ -1,0 +1,28 @@
+Meridian Financial Services Ltd
+INFORMATION SECURITY POLICY
+Document Owner: Chief Information Security Officer (CISO) | Version 4.2 | Last Reviewed: March 2026
+
+1. Purpose
+This policy establishes the framework for protecting the confidentiality, integrity, and availability of the firm's information assets.
+
+2. Access Control
+2.1 Access to systems is granted on a least-privilege, role-based basis.
+2.2 Access to customer data requires manager approval and is reviewed quarterly.
+2.3 Multi-factor authentication is mandatory for all systems containing customer or financial data.
+
+3. Data Encryption
+All customer data must be encrypted at rest (AES-256 or equivalent) and in transit (TLS 1.2 or higher).
+
+4. Incident Response
+4.1 Suspected security incidents must be reported to the Security Operations team immediately via the internal incident channel.
+4.2 Incidents are triaged within 1 hour and classified by severity.
+4.3 Severity 1 incidents (data breach or system compromise) trigger the Data Breach Response Procedure.
+
+5. Third-Party Access
+External parties requiring system access must sign a confidentiality agreement and are subject to the same access control standards as employees.
+
+6. Security Training
+All staff complete annual security awareness training, including phishing simulation exercises.
+
+7. Penetration Testing
+Independent penetration testing is conducted at least annually on all customer-facing systems, with findings tracked to remediation.

@@ -1,0 +1,27 @@
+Meridian Financial Services Ltd
+FRAUD DETECTION AND ESCALATION PROCEDURE
+Document Owner: Fraud Operations | Version 3.1 | Last Reviewed: June 2026
+
+1. Purpose
+This procedure defines how suspected fraudulent activity is identified, escalated, and resolved.
+
+2. Detection
+2.1 Automated fraud scoring flags transactions exceeding the firm's risk threshold in real time.
+2.2 Staff may also identify suspected fraud through customer reports or manual review.
+
+3. Escalation Tiers
+3.1 Tier 1 (low confidence flag): reviewed by a Fraud Analyst within 4 business hours.
+3.2 Tier 2 (medium confidence): account is temporarily restricted pending review, customer notified.
+3.3 Tier 3 (high confidence / confirmed fraud): account is suspended immediately, funds frozen where possible, and case referred to the Fraud Investigation team.
+
+4. Customer Communication
+Customers affected by a fraud hold must be contacted within 24 hours with a clear explanation and expected resolution timeline, unless doing so would compromise an active investigation.
+
+5. Law Enforcement Referral
+Confirmed fraud cases above £5,000, or involving organised patterns, are reported to Action Fraud and, where relevant, the National Crime Agency.
+
+6. Interaction with AML
+Where fraud is suspected to involve money laundering, the case is jointly handled with the MLRO under the AML Policy, and a SAR is considered.
+
+7. Recovery
+The Fraud Operations team pursues recovery of funds where possible, including chargebacks and liaison with receiving banks.

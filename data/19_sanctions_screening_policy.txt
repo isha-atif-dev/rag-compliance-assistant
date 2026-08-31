@@ -1,0 +1,22 @@
+Meridian Financial Services Ltd
+SANCTIONS SCREENING POLICY
+Document Owner: MLRO Office | Version 2.0 | Last Reviewed: June 2025
+
+1. Purpose
+This policy ensures the firm does not provide services to sanctioned individuals, entities, or jurisdictions, in compliance with UK, EU, and OFAC sanctions regimes as applicable.
+
+2. Screening Requirements
+2.1 All customers are screened against relevant sanctions lists (OFSI, UN, EU, OFAC) at onboarding.
+2.2 Ongoing screening is performed daily against updated sanctions lists for all active customers.
+2.3 Payment transactions are screened in real time before execution.
+
+3. Match Handling
+3.1 A potential match ("hit") automatically places the relevant transaction or account action on hold pending review.
+3.2 A Sanctions Analyst reviews the hit within 4 business hours to determine if it is a true match or false positive.
+3.3 Confirmed true matches are escalated immediately to the MLRO, and funds are frozen where legally required.
+
+4. Reporting
+Confirmed sanctions matches must be reported to the Office of Financial Sanctions Implementation (OFSI) as required by law.
+
+5. List Updates
+The sanctions screening system is updated with new list changes within 24 hours of publication by the relevant authority.

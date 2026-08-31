@@ -1,0 +1,23 @@
+Meridian Financial Services Ltd
+DATA RETENTION AND RECORDS MANAGEMENT POLICY
+Document Owner: Compliance | Version 2.1 | Last Reviewed: November 2025
+
+1. Purpose
+This policy sets minimum and maximum retention periods for categories of records held by the firm, balancing regulatory requirements with data minimisation obligations under GDPR.
+
+2. Retention Schedule
+2.1 Customer due diligence records: 5 years from the end of the business relationship (Money Laundering Regulations 2017).
+2.2 Transaction records: 5 years from the date of the transaction.
+2.3 Suspicious Activity Reports and related internal records: 5 years, held separately with restricted access.
+2.4 Complaints records: 3 years from resolution, per FCA DISP rules.
+2.5 Marketing consent records: retained for the duration consent is active, plus 2 years after withdrawal.
+2.6 Employee records: 6 years after employment ends, in line with statutory limitation periods.
+
+3. Secure Disposal
+Records must be securely destroyed at the end of their retention period using approved secure deletion methods. Disposal must be logged.
+
+4. Legal Holds
+Where records are subject to litigation, regulatory investigation, or a legal hold notice, standard retention periods are suspended until the hold is lifted.
+
+5. Responsibilities
+Each department is responsible for records within its function. Compliance conducts an annual retention audit across all departments.

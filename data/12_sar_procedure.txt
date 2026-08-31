@@ -1,0 +1,25 @@
+Meridian Financial Services Ltd
+SUSPICIOUS ACTIVITY REPORTING (SAR) PROCEDURE
+Document Owner: MLRO Office | Version 1.8 | Last Reviewed: July 2025
+
+1. Purpose
+This procedure sets out how internal suspicions of money laundering or terrorist financing are reported and escalated to the National Crime Agency (NCA).
+
+2. Internal Reporting
+2.1 Any employee with knowledge or suspicion of money laundering must submit an internal report to the MLRO using the internal SAR form, regardless of transaction value.
+2.2 Reports must be submitted as soon as reasonably practicable, and in any case within 24 hours of the suspicion arising.
+
+3. MLRO Assessment
+The MLRO reviews each internal report and decides within 2 business days whether it meets the threshold for an external SAR to the NCA.
+
+4. External Submission
+Where an external SAR is required, it is submitted via the NCA's SAR Online portal. Consent SARs (where the firm wishes to proceed with a transaction) require NCA consent or the expiry of the statutory notice period before proceeding.
+
+5. Confidentiality
+Details of a SAR, including its existence, must not be disclosed to the customer or any unauthorised person ("tipping off" offence under POCA 2002).
+
+6. Record Keeping
+All internal and external SAR records are retained for 5 years in a restricted-access system, separate from general customer records.
+
+7. Quality Review
+The MLRO conducts a quarterly quality review of a sample of SAR decisions to ensure consistency and identify training needs.

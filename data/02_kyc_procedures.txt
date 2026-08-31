@@ -1,0 +1,28 @@
+Meridian Financial Services Ltd
+KNOW YOUR CUSTOMER (KYC) PROCEDURES
+Document Owner: Onboarding Operations | Version 2.4 | Last Reviewed: January 2026
+
+1. Purpose
+These procedures describe the practical steps staff must follow to verify customer identity before an account is opened or activated.
+
+2. Standard Onboarding Steps
+2.1 Collect full legal name, date of birth, residential address, and nationality.
+2.2 Verify identity using a government-issued photo ID (passport or driving licence) plus one proof of address dated within the last 3 months.
+2.3 Run identity verification through the approved third-party eKYC provider.
+2.4 Screen the customer against sanctions lists, PEP lists, and adverse media as part of onboarding.
+
+3. Business Customer Onboarding
+3.1 Verify the legal entity via Companies House (or equivalent registry for non-UK entities).
+3.2 Identify and verify all beneficial owners holding 25% or more of shares or voting rights.
+3.3 Obtain a copy of the ownership structure chart for entities with complex or layered ownership.
+
+4. Verification Failures
+4.1 If identity cannot be verified through automated checks, the case is escalated to the Manual Review team.
+4.2 Manual Review may request additional documentation or, where verification cannot be completed, decline the application.
+
+5. Ongoing Monitoring
+5.1 Customer information must be refreshed periodically: every 1 year for high-risk customers, every 3 years for medium-risk, every 5 years for low-risk.
+5.2 Significant changes in customer behaviour (e.g. large unexplained deposits) trigger an ad-hoc KYC refresh regardless of the scheduled review date.
+
+6. Roles and Responsibilities
+Onboarding Analysts perform initial checks. Manual Review handles escalations. The MLRO has final authority on high-risk or ambiguous cases.

@@ -1,0 +1,27 @@
+Meridian Financial Services Ltd
+COMPLAINTS HANDLING PROCEDURE
+Document Owner: Customer Operations | Version 2.2 | Last Reviewed: May 2026
+
+1. Purpose
+This procedure describes the step-by-step handling of a complaint from receipt to closure, supporting the Complaints Handling Policy.
+
+2. Step 1: Logging
+Every complaint, however received (phone, email, chat, letter, social media), must be logged in the complaints register within 24 hours, including customer details, complaint category, and channel received.
+
+3. Step 2: Acknowledgement
+An acknowledgement is sent to the customer confirming receipt, the assigned case handler, and expected timeline.
+
+4. Step 3: Investigation
+The case handler gathers relevant evidence: account records, transaction history, prior correspondence, and relevant policy documents. Where the complaint involves a third party (e.g. a payment scheme), the handler must contact that party for information.
+
+5. Step 4: Decision
+The case handler prepares a decision with clear reasoning, referencing the relevant policy or regulation. Decisions on complaints involving redress above £500 require sign-off from a Team Lead.
+
+6. Step 5: Final Response Letter
+The final response must clearly state the outcome, the reasoning, any redress offered, and the customer's right to refer to the Financial Ombudsman Service within 6 months if unsatisfied.
+
+7. Step 6: Closure and Logging
+The case is closed in the system with full documentation retained per the Records Retention Policy.
+
+8. Vulnerable Customers
+Where a complainant is identified as vulnerable, the case is flagged and handled with additional care per the Consumer Duty Implementation Policy, including extended response flexibility where appropriate.

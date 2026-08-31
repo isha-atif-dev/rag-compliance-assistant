@@ -1,0 +1,29 @@
+Meridian Financial Services Ltd
+DATA PROTECTION AND GDPR COMPLIANCE POLICY
+Document Owner: Data Protection Officer (DPO) | Version 4.0 | Last Reviewed: April 2026
+
+1. Purpose
+This policy sets out how Meridian Financial Services Ltd complies with the UK GDPR and the Data Protection Act 2018 in handling personal data of customers, employees, and other individuals.
+
+2. Data Protection Principles
+Personal data must be: processed lawfully, fairly, and transparently; collected for specified purposes only; adequate and limited to what is necessary; accurate and kept up to date; retained only as long as necessary; and processed securely.
+
+3. Lawful Basis for Processing
+3.1 Customer onboarding and account servicing: contractual necessity.
+3.2 AML and fraud checks: legal obligation and legitimate interest.
+3.3 Marketing communications: consent, which may be withdrawn at any time.
+
+4. Data Subject Rights
+Individuals have the right to access, rectify, erase, restrict processing of, and port their personal data, and to object to processing based on legitimate interest. Requests must be actioned within one calendar month.
+
+5. Data Breach Response
+Any suspected personal data breach must be reported to the DPO immediately. Where a breach poses a risk to individuals, the Information Commissioner's Office (ICO) must be notified within 72 hours. See the Data Breach Response Procedure for full steps.
+
+6. International Transfers
+Personal data may only be transferred outside the UK where an adequacy decision applies or approved safeguards (such as Standard Contractual Clauses) are in place.
+
+7. Data Protection Impact Assessments (DPIAs)
+A DPIA is required before implementing any new system or process that involves high-risk processing of personal data, including new AI or automated decision-making systems.
+
+8. Training
+All staff complete data protection training on induction and annually. Staff handling sensitive customer data complete additional role-specific training.
