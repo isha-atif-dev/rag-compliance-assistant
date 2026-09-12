@@ -13,7 +13,16 @@ class AskRequest(BaseModel):
     question: str
 
 
+class Citation(BaseModel):
+    """One source document used to answer, with a short snippet of the
+    actual retrieved text, so the UI can show more than just a filename."""
+    source: str
+    snippet: str
+
+
 class AskResponse(BaseModel):
-    """What we send back: the grounded answer, plus which documents were available to it."""
+    """What we send back: the grounded answer, the documents available
+    to it, and a richer citations list (source + snippet) for display."""
     answer: str
     sources_available: list[str]
+    citations: list[Citation]

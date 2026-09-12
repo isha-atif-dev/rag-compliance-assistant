@@ -22,7 +22,7 @@ def ask_question(request: AskRequest, _: None = Depends(verify_api_key)):
     POST /ask
     Header: X-API-Key: <your key>
     Body: {"question": "..."}
-    Returns: {"answer": "...", "sources_available": [...]}
+    Returns: {"answer": "...", "sources_available": [...], "citations": [...]}
     """
     logger.info(f"Question received: {request.question}")
 
@@ -34,4 +34,5 @@ def ask_question(request: AskRequest, _: None = Depends(verify_api_key)):
     return AskResponse(
         answer=result["answer"],
         sources_available=result["sources_available"],
+        citations=result["citations"],
     )

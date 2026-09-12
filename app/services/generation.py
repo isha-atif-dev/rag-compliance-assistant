@@ -41,12 +41,30 @@ def build_context(chunks):
     return "\n\n---\n\n".join(blocks)
 
 
+def _build_citations(chunks):
+    """
+    Builds a deduplicated list of {source, snippet} for display in the UI,
+    one entry per unique source document among the retrieved chunks, using
+    the first chunk seen for that source as its representative snippet.
+    """
+    seen = set()
+    citations = []
+    for c in chunks:
+        if c["source"] in seen:
+            continue
+        seen.add(c["source"])
+        snippet = " ".join(c["text"].split())  # collapse newlines/whitespace
+        if len(snippet) > 160:
+            snippet = snippet[:160].rsplit(" ", 1)[0] + "..."
+        citations.append({"source": c["source"], "snippet": snippet})
+    return citations
+
+
 def generate_answer(question: str, chunks: list) -> dict:
     """
     Calls Claude with the question and retrieved chunks, grounded via the
-    system prompt above. Returns the answer text plus the list of sources
-    that were made available (not necessarily all cited, but this is what
-    the model had access to, useful for showing "based on" in the UI).
+    system prompt above. Returns the answer, the list of source filenames
+    available, and a richer citations list (source + snippet) for the UI.
     """
     context = build_context(chunks)
 
@@ -67,8 +85,10 @@ Question: {question}"""
 
     answer_text = response.content[0].text
     sources_available = sorted(set(c["source"] for c in chunks))
+    citations = _build_citations(chunks)
 
     return {
         "answer": answer_text,
         "sources_available": sources_available,
+        "citations": citations,
     }
