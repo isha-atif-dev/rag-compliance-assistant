@@ -83,7 +83,14 @@ Question: {question}"""
         messages=[{"role": "user", "content": user_message}],
     )
 
-    answer_text = response.content[0].text
+    # Some responses may include a "thinking" block before the actual answer,
+# so find the text block explicitly instead of assuming it's always first.
+    answer_text = next(
+        (block.text for block in response.content if block.type == "text"),
+        None,
+    )
+    if answer_text is None:
+        raise ValueError("No text content found in Claude's response")
     sources_available = sorted(set(c["source"] for c in chunks))
     citations = _build_citations(chunks)
 
