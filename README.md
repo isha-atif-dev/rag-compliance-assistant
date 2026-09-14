@@ -25,7 +25,7 @@ Ask a real compliance question in plain English, get back an answer grounded str
 
 ## Architecture
 
-\`\`\`mermaid
+```mermaid
 graph LR
     Q[User Question] --> API[FastAPI /ask endpoint]
     API --> AUTH{API Key valid?}
@@ -44,11 +44,11 @@ graph LR
     LLM --> ANS[Answer + citations]
     ANS --> LOG[Logged to app.log]
     ANS --> RESP[JSON response]
-\`\`\`
+```
 
 **Data pipeline (one-time setup):**
 
-\`\`\`
+```
 Policy documents (.txt)
         |
    Chunking (recursive character splitter, metadata-enriched with document title)
@@ -56,11 +56,11 @@ Policy documents (.txt)
    Embedding (all-mpnet-base-v2, 768-dim vectors)
         |
    Stored in PostgreSQL + pgvector
-\`\`\`
+```
 
 **Deployment pipeline:**
 
-\`\`\`
+```
 Push to main
         |
    GitHub Actions: run pytest
@@ -70,7 +70,7 @@ Push to main
    git pull + docker compose up --build -d
         |
    Live app updated automatically
-\`\`\`
+```
 
 ---
 
@@ -97,7 +97,7 @@ Push to main
 
 **Metadata-enriched chunking.** Each chunk is embedded together with its parent document's title, not just its own text. This solved cases where a chunk's content alone did not contain the keywords needed to identify which policy it belonged to.
 
-**Evaluated, not assumed.** Retrieval quality is measured with Recall@5 across a 20-question hand-built evaluation set spanning all 20 source documents, currently scoring 100%. See \`evaluate_retrieval.py\`.
+**Evaluated, not assumed.** Retrieval quality is measured with Recall@5 across a 20-question hand-built evaluation set spanning all 20 source documents, currently scoring 100%. See `evaluate_retrieval.py`.
 
 **CPU-only PyTorch in production.** The default PyTorch install bundles several gigabytes of NVIDIA CUDA libraries that are unnecessary on a CPU-only server. The Dockerfile installs the CPU-only build explicitly, reducing image size significantly.
 
@@ -107,25 +107,25 @@ Push to main
 
 ## Project structure
 
-\`\`\`
+```
 rag-compliance-assistant/
-├── .github/workflows/  # CI/CD pipeline
-├── app/
-│   ├── api/            # FastAPI routes
-│   ├── core/           # config, auth, logging
-│   ├── db/             # database connection
-│   ├── models/         # Pydantic schemas
-│   └── services/       # chunking, retrieval, generation
-├── data/               # 20 synthetic policy documents
-├── tests/              # pytest test suite
-├── eval_questions.py   # evaluation question set
-├── evaluate_retrieval.py
-├── streamlit_app.py    # frontend
-├── main.py             # FastAPI entry point
-├── Dockerfile
-├── docker-compose.yml
-└── requirements.txt
-\`\`\`
+  .github/workflows/     CI/CD pipeline
+  app/
+    api/                 FastAPI routes
+    core/                config, auth, logging
+    db/                  database connection
+    models/              Pydantic schemas
+    services/            chunking, retrieval, generation
+  data/                  20 synthetic policy documents
+  tests/                 pytest test suite
+  eval_questions.py      evaluation question set
+  evaluate_retrieval.py
+  streamlit_app.py       frontend
+  main.py                FastAPI entry point
+  Dockerfile
+  docker-compose.yml
+  requirements.txt
+```
 
 ---
 
@@ -133,56 +133,56 @@ rag-compliance-assistant/
 
 **Prerequisites:** Python 3.11+, Docker Desktop, an Anthropic API key.
 
-\`\`\`bash
+```bash
 git clone https://github.com/isha-atif-dev/rag-compliance-assistant.git
 cd rag-compliance-assistant
 
 python -m venv venv
-source venv/bin/activate   # Windows: venv\\Scripts\\Activate.ps1
+source venv/bin/activate   # Windows: venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-\`\`\`
+```
 
-Create a \`.env\` file:
+Create a `.env` file:
 
-\`\`\`
+```
 ANTHROPIC_API_KEY=your-anthropic-key
 APP_API_KEY=choose-your-own-key
 DATABASE_URL=postgresql://postgres:devpassword123@db:5432/rag_compliance
-\`\`\`
+```
 
 Start everything with Docker Compose:
 
-\`\`\`bash
+```bash
 docker compose up --build -d
-\`\`\`
+```
 
 Load the knowledge base (first run only):
 
-\`\`\`bash
+```bash
 docker compose exec app python setup_db.py
 docker compose exec app python store_chunks.py
-\`\`\`
+```
 
 Run the frontend:
 
-\`\`\`bash
+```bash
 streamlit run streamlit_app.py
-\`\`\`
+```
 
 ---
 
 ## API usage
 
-\`\`\`bash
+```bash
 curl -X POST http://localhost:8000/ask \\
   -H "Content-Type: application/json" \\
   -H "X-API-Key: your-app-api-key" \\
   -d '{"question": "What is the timeline for reporting suspicious activity?"}'
-\`\`\`
+```
 
 **Response**
 
-\`\`\`json
+```json
 {
   "answer": "...",
   "sources_available": ["12_sar_procedure.txt", "..."],
@@ -190,18 +190,18 @@ curl -X POST http://localhost:8000/ask \\
     {"source": "12_sar_procedure.txt", "snippet": "..."}
   ]
 }
-\`\`\`
+```
 
-Interactive API documentation (Swagger UI) is available at \`/docs\`.
+Interactive API documentation (Swagger UI) is available at `/docs`.
 
 ---
 
 ## Testing and evaluation
 
-\`\`\`bash
+```bash
 pytest
 python evaluate_retrieval.py
-\`\`\`
+```
 
 Current results: automated tests passing, Recall@5 = 100% on the evaluation set.
 
@@ -209,7 +209,7 @@ Current results: automated tests passing, Recall@5 = 100% on the evaluation set.
 
 ## Deployment
 
-Deployed on a single AWS EC2 instance (Ubuntu, t3.small) in eu-west-2 (London), running the same Docker Compose setup used locally. The database runs in its own container alongside the application container, on a shared Docker network. A GitHub Actions pipeline automatically tests and redeploys the application on every push to \`main\`.
+Deployed on a single AWS EC2 instance (Ubuntu, t3.small) in eu-west-2 (London), running the same Docker Compose setup used locally. The database runs in its own container alongside the application container, on a shared Docker network. A GitHub Actions pipeline automatically tests and redeploys the application on every push to `main`.
 
 ---
 
