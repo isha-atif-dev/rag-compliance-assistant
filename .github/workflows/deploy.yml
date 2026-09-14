@@ -20,7 +20,7 @@ jobs:
         run: pip install pytest langchain-text-splitters
 
       - name: Run tests
-        run: pytest
+        run: pytest tests/
 
   deploy:
     needs: test
