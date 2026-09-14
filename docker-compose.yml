@@ -1,0 +1,28 @@
+# Defines and runs two containers together: your FastAPI app and the
+# pgvector-enabled Postgres database, on a shared network so they can
+# reach each other by container name instead of 127.0.0.1.
+services:
+
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_PASSWORD: devpassword123
+      POSTGRES_DB: rag_compliance
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # keeps data even if the container restarts
+
+  app:
+    build: .              # build using the Dockerfile in this folder
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://postgres:devpassword123@db:5432/rag_compliance
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      APP_API_KEY: ${APP_API_KEY}
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
