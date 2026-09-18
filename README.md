@@ -97,7 +97,7 @@ Push to main
 
 **Metadata-enriched chunking.** Each chunk is embedded together with its parent document's title, not just its own text. This solved cases where a chunk's content alone did not contain the keywords needed to identify which policy it belonged to.
 
-**Evaluated, not assumed.** Retrieval quality is measured with Recall@5 across a 20-question hand-built evaluation set spanning all 20 source documents, currently scoring 100%. See `evaluate_retrieval.py`.
+**Evaluated, not assumed.** Retrieval quality is measured with Recall@5 across a 20-question hand-built evaluation set spanning all 20 source documents, currently scoring 100%. See `scripts/evaluate_retrieval.py`.
 
 **CPU-only PyTorch in production.** The default PyTorch install bundles several gigabytes of NVIDIA CUDA libraries that are unnecessary on a CPU-only server. The Dockerfile installs the CPU-only build explicitly, reducing image size significantly.
 
@@ -118,8 +118,13 @@ rag-compliance-assistant/
     services/            chunking, retrieval, generation
   data/                  20 synthetic policy documents
   tests/                 pytest test suite
-  eval_questions.py      evaluation question set
-  evaluate_retrieval.py
+  scripts/               setup and evaluation scripts, run once or occasionally
+    setup_db.py          creates the database table
+    store_chunks.py      embeds and stores all documents
+    check_storage.py     manual check: confirms data landed correctly
+    eval_questions.py    evaluation question set
+    evaluate_retrieval.py
+    manual_checks/       manual sanity-check scripts (not automated tests)
   streamlit_app.py       frontend
   main.py                FastAPI entry point
   Dockerfile
@@ -159,8 +164,8 @@ docker compose up --build -d
 Load the knowledge base (first run only):
 
 ```bash
-docker compose exec app python setup_db.py
-docker compose exec app python store_chunks.py
+docker compose exec app python -m scripts.setup_db
+docker compose exec app python -m scripts.store_chunks
 ```
 
 Run the frontend:
@@ -174,9 +179,9 @@ streamlit run streamlit_app.py
 ## API usage
 
 ```bash
-curl -X POST http://localhost:8000/ask \\
-  -H "Content-Type: application/json" \\
-  -H "X-API-Key: your-app-api-key" \\
+curl -X POST http://localhost:8000/ask \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: your-app-api-key" \
   -d '{"question": "What is the timeline for reporting suspicious activity?"}'
 ```
 
@@ -200,7 +205,7 @@ Interactive API documentation (Swagger UI) is available at `/docs`.
 
 ```bash
 pytest
-python evaluate_retrieval.py
+python -m scripts.evaluate_retrieval
 ```
 
 Current results: automated tests passing, Recall@5 = 100% on the evaluation set.
