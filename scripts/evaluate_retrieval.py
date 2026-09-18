@@ -9,7 +9,7 @@ repeatable number.
 """
 
 from app.services.retrieval import hybrid_search
-from eval_questions import EVAL_QUESTIONS
+from scripts.eval_questions import EVAL_QUESTIONS
 
 
 def main():
